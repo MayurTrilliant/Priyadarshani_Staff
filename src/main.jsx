@@ -396,7 +396,7 @@ function TextField({ label, name, value, count, error, onChange, onBlur, ...prop
 function DateField({ label, name, parts, error, onChange, onBlur }) {
   const currentYear = new Date().getFullYear();
 const years = Array.from(
-  { length: currentYear - 1990 + 1 },
+  { length: currentYear - 1940 + 1 },
   (_, index) => String(currentYear - index)
 );
   const days = Array.from({ length: getDaysInMonth(parts.month, parts.year) }, (_, index) =>
